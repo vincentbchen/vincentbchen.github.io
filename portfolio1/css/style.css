@@ -1,0 +1,604 @@
+.greeting {
+	text-align: center;
+	margin: 150px auto 50px auto;
+}
+
+.self_portrait {
+	
+	border-radius: 50%;
+	border: none;
+	width: 20vw;
+}
+
+.portrait_frame {
+	margin: 3em auto;
+	width: 20vw;
+}
+
+.about_quote {
+	font:;
+}
+
+.resume p {
+	color: #EE368A;
+	width: 12em;
+	text-align: center;
+	vertical-align: top;
+	border-radius: 5em;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(238,54,138,1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 50px auto;
+}
+
+.resume p:hover {
+   opacity: 1;
+   background: rgba(238,54,138,.8);
+   border-color: rgba(238,54,138,.3);
+   color: white;
+}
+
+.capsule_button p {
+  color: #EE368A;
+  width: 13em;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 5em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #EE368A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto ;
+}
+
+.capsule_button p:hover {
+   opacity: 1;
+   background: rgba(238,54,138,.8);
+   border-color: rgba(238,54,138,.3);
+   color: white;
+}
+
+.socialmedia {
+	margin: 3em auto 1em;
+	max-width: 270px;
+	align-items: center;
+}
+
+.socialmedia_icon {
+	width: 60px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.email_icon {
+	width: 65px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.cover_image {
+	overflow: hidden;
+	max-width: 100%;
+  vertical-align: text-bottom;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay:hover {
+   opacity: 1;
+   background: linear-gradient(90deg, rgba(186,147,234,.9) 0%, rgba(146,205,209,.9) 100%);
+}
+
+.relative {
+	position: relative;
+}
+
+.overlay_fcw {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_fcw:hover {
+   opacity: 1;
+   background: rgba(0,0,0,.7);
+}
+
+.overlay_fp7 {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_fp7:hover {
+   opacity: 1;
+   background: rgba(137,172,135,.89);
+}
+
+.overlay_chapeau {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_chapeau:hover {
+   opacity: 1;
+   background: rgba(24,34,56,.9);
+}
+
+.overlay_nuc {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_nuc:hover {
+   opacity: 1;
+   background: rgba(76,172,162,.9);
+}
+
+.overlay_hux {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_hux:hover {
+   opacity: 1;
+   background: rgba(62,67,71,.8);
+}
+
+.overlay_ind {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_ind:hover {
+   opacity: 1;
+   background: rgba(43,176,221,.9);
+}
+
+.overlay_ske {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.overlay_ske:hover {
+   opacity: 1;
+   background: rgba(231,113,167,.8);
+}
+
+.hovertext {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
+}
+
+.hovertext_title {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+}
+
+.hovertext_body {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 300;
+}
+
+.hovertext_title_archive {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+.hovertext_body_archive {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  letter-spacing: 0.5px;
+}
+
+.block {
+  display: block;
+}
+
+.a_square_cover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner_smaps {
+	clear: both;
+	width: 100%;
+	height: 70vh;
+	margin: 0px auto;
+	background: #333 url('../img/smaps/smaps_banner.png') center no-repeat;
+/*	position: absolute;
+*/	/*use background-size:cover to ensure image resize with the element*/
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+}
+
+.cover {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+}
+
+
+.cover_smaps {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+  background-image:url('../img/home/smaps.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+
+.banner_fcw {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/fcw/poster.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.banner_mentor {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #e8e8e8;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.cover_fcw {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+  background-image:url('../img/home/fcw.png');
+  background-position: center;
+  background-repeat: no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+
+.cover_fonepad7 {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+  background-image:url('../img/home/fonepad7.png');
+  background-position: center;
+  background-repeat: no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+
+.banner_asus {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/asus/poster.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.cover_chapeau {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+  background-image:url('../img/home/chapeau.png');
+  background-position: center;
+  background-repeat: no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+
+.banner_chapeau {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/chapeau/banner.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.chapeau_menu {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/chapeau/banner_menu.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.chapeau_website {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/chapeau/banner_website.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.cover_nuc {
+  clear: both;
+  width: 100%;
+  height: 30em;
+  margin: 0px auto;
+  background-image:url('../img/home/nuc.png');
+  background-position: center;
+  background-repeat: no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+
+.banner_nuc {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/nuc/banner_nuc.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.banner_samsung {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/hardwareux/banner_samsung.jpg') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.banner_pill-time {
+  clear: both;
+  width: 100%;
+  height: 70vh;
+  margin: 0px auto;
+  background: #333 url('../img/hardwareux/banner_pill-time.png') center no-repeat;
+/*  position: absolute;
+*/  /*use background-size:cover to ensure image resize with the element*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.piechart {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.fcw_userjourney {
+  height: ;
+}
+
+.mantra {
+  margin-top: 74px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#no-side-margin {
+  margin-right:0;
+  margin-left:0;
+}
+
+.sketch {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .1);
+}
+
+.iphone_video {
+  width: 320;
+}
+
+.video_box_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video_box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 187.7%;
+}
+
+.playpause {
+    background-image:url('../img/icon/play_video.svg');
+    background-repeat:no-repeat;
+    width:9em;
+    height:auto;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#googledoc {
+  width: 25%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+
