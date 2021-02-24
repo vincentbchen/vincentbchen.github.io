@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+      <title>sketches</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="css/spacer.css">
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/type.css">
+      <link rel="stylesheet" href="css/hamburger.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/tab.css">
+      <link rel="stylesheet" href="css/picker.css">
+      <link rel="stylesheet" href="css/lightbox.css">
+      <link rel="stylesheet" href="css/back_to_top.css">
+      <link rel="stylesheet" href="https://use.typekit.net/cgw2tuu.css">
+      <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+      <div id="homebutton">
+        <a href="index.html"><img src="img/logo.svg"></a>
+      </div>
+
+      <div class="header_background tp-spc-md bt-spc-md">
+          <header class="header">
+            <div class="logo_container">
+                      
+                      <div class="logo">
+                          <a href="index.html"><img src="img/logo.svg">
+                      </div>
+
+                      <div class="me">
+                        <p class="name">Vincent B. Chen</p>
+                        <p class="title">UX/Product Designer</p>                   
+                      </div> 
+
+                </div></a>
+        
+
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+            <ul class="menu">
+              <li><a class="medium selected" href="index.html">Work</a></li>
+              <li><a class="medium" href="about.html">About</a></li>
+              <li><a class="medium" href="img/vincent.b.chen_resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+
+          </header>
+        </div>
+
+
+<!-- SAMSUNG -->
+
+
+      <div class="container">
+
+            <div class="spc_xl"></div>
+
+            <div class="row gutters">
+
+                  <div class="col-lg-1 col-md-1 col-sm-0"></div>
+
+                  <div class="col-lg-10 col-md-10 col-sm-6 popup">
+
+                      <img src="img/sketch/10.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch" src="img/sketch/1.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch"  src="img/sketch/2.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch"  src="img/sketch/11.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch" src="img/sketch/4.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch"  src="img/sketch/5.jpg">
+                      <div class="spc_md"></div>
+
+                      <img class="sketch" src="img/sketch/6.jpg">
+                      <div class="spc_md"></div>
+
+                      <img src="img/sketch/7.jpg">
+                      <div class="spc_md"></div>
+
+                      <img src="img/sketch/8.jpg">
+                      <div class="spc_md"></div>
+
+                      <img src="img/sketch/9.jpg">
+                  </div>
+
+                  <div class="col-lg-1 col-md-1 col-sm-0"></div>
+            </div>
+
+      
+
+            <div class="spc_lg"></div>
+
+          <footer class="book">
+                    <div class="socialmedia">
+
+                              <a href="https://www.linkedin.com/in/vincentbchen1/" target="_blank"><img class="socialmedia_icon" src="img/icon/linkedin.svg"></a>
+
+                              <a href="https://www.instagram.com/vincent.b.chen/" target="_blank"><img class="socialmedia_icon" src="img/icon/instagram.svg"></a>
+
+                              <a href="https://www.facebook.com/vincentberkeley.chen" target="_blank"><img class="socialmedia_icon" src="img/icon/facebook.svg"></a>
+
+                              <a href="mailto:vincent.b.chen@gmail.com" target="_blank"><img class="email_icon" src="img/icon/email.svg"></a>
+
+                    </div>
+                © 2020 Vincent B. Chen, all rights reserved.
+          </footer>
+
+
+       </div> 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="hidden"><img src="img/icon/btp_button.svg"></button>
+
+    <script  src="js/tab.js"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/back_to_top.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+    console.log(screen.width);
+      if(screen.width>768) {
+        $(".popup").on("click","img",function(){
+          let src = $(this).attr("src");
+          console.log(src);
+          $("body").append(`<div class='sketch_lb'><img src='${src}'></div>`);
+        });
+        $("body").on("click",".sketch_lb",function(){
+          $(this).remove();
+        })
+      }
+    </script>
+</body>
+
+</html>

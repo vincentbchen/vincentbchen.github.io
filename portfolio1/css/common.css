@@ -1,0 +1,553 @@
+ /* TAG REDEFINITIONS */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+}
+
+a {
+	font-weight: 400;
+	color:inherit;
+	cursor: pointer;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+hr {
+  	margin-top: 0;
+  	margin-bottom: 0;
+ }
+
+footer {
+	text-align: center;
+	padding-bottom: 2em;
+	color: rgba(0,0,0,.6);
+	font-size: 14px;
+}
+
+
+/* COMMON CLASSES */
+
+/*.zoom {
+  transition: transform .2s;
+
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05);  
+  cursor: zoom-in;
+}
+
+.zoom1 {
+  transition: transform .2s;
+
+}
+
+.zoom1:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);  
+  cursor: pointer;
+}*/
+
+
+.fixed-sidenav {
+    width: max-content;
+    position: fixed;
+    position: -webkit-fixed;
+    z-index: 1;
+    top: 33vh;
+    left: 15px;
+    overflow-x: hidden;
+    display: block;
+    float: left;
+}
+
+.lz a.active {
+	    color: var(--lz-500);
+}
+
+.lettrez-text-transparent {
+    color: var(--lz-50);
+}
+
+.fixed-sidenav a:hover{
+    color: #656565;
+    cursor: pointer;
+}
+
+.fixed-sidenav h6 {
+    font-family: "itc-avant-garde-gothic-pro-demi";
+  	font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.4;
+}
+
+:root {
+/*	--body-text-color: #4d4d4d;
+	--brand-text-color: #000000;
+	--brand-accent: #FB8C00;
+	--brand-background: #e2f3f8;
+	--gray-background: #f7f7f7;
+
+	--starbucks-800: #07773D;
+	--starbucks-400: #4cb675;
+	--starbucks-50: #e5f4eb;
+
+	--aau-900: #283593;
+	--aau-400:#5c6be1;
+	--aau-50: #E8EAF6;
+
+	--lz-700: #890d12;*/
+	--lz-500: #656565;
+	--lz-50: #D6D6D6;
+/*
+	--icon-800: #9E9D24;
+	--icon-500: #C0CA33;
+	--icon-50: #F9FBE7;
+	
+	--youarehere-700: #ef6c00;
+	--youarehere-50: #fff3e0;
+
+	--gk-800: #7a4945;
+	--gk-400: #a47f7b;
+	--gk-50: #EAE4E4;*/
+
+	
+}
+
+
+
+.vertical_center {
+	margin-top: 6em;
+}
+
+
+.vertical_center1 {
+	padding-top: 3em;
+}
+
+.shadow {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.container {
+	max-width:1140px;
+	margin-right: auto;
+	margin-left: auto;
+	column-gap: 30px;
+}
+
+.container img {
+	max-width: 100%;
+}
+
+.container .tab {
+	width: 100%;
+}
+
+
+.container_1 {
+	max-width:1140px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container_1 img{
+	width: 100%;
+}
+
+.container_2 {
+	max-width:1140px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container_2 img{
+	width: 100%;
+}
+
+.centered-child {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+
+
+
+.flex-parent {
+	display:-webkit-flex;
+	display:flex;
+}
+.flex-child {
+	flex:1 1 auto;
+}
+.flex-none {
+	flex:none;
+}
+
+
+.card {
+	background: #fff;
+    padding: 40px;
+    display: inline-block;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.5);	
+}
+
+.card_webpage {
+	background: #fff;
+    display: inline-block;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.5);	
+}
+
+.card_basic {
+	background-color:white;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.5)
+/*	margin-right: -15px;
+	margin-left: -15px;*/
+}
+
+.card>:first-child {
+	margin-top:0;
+}
+.card>:last-child {
+	margin-bottom:0;
+}
+
+
+.view-window {
+	height:50vh;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	position:relative;
+}
+.view-window-box {
+	height:calc(50vh - 100px);
+	width:calc(50vw - 100px);
+	text-align:center;
+}
+.view-description {
+	position:absolute;
+	width: 50vw;
+	background-color: rgba(238,238,238,0.7);
+}
+.view-window-box img {
+	max-height:100%;
+	max-width:100%;
+}
+.view-window>img {
+	max-height:calc(100% - 100px);
+	max-width:calc(100% - 100px);
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.dual-box {
+}
+.dual-box img{
+	max-width:100%;
+}
+.dual-box .box {
+	width:50%;
+	flex:1 1 auto;
+	padding:30px;
+	position:relative;
+}
+.dual-box h2, 
+.dual-box p {
+	margin:0;
+}
+.dual-box.flipped .box:nth-child(1) {
+	order:2;
+}
+.dual-box.flipped .box:nth-child(2) {
+	order:1;
+}
+
+
+#homebutton {
+	position: fixed;
+	transform-origin: 50%, 50%;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	padding-top: 14px;
+	margin-top: 15px;
+	margin-left: 15px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	z-index: 10;
+	background-color: white;
+	opacity: 0;
+/*	display: none;
+*/}
+
+#homebutton .img {
+	width: 30px;
+
+}
+
+#starbucks-fixed-sidenav {
+	z-index: 10;
+	opacity: 0;
+}
+
+.introcard {
+	background-color: white;
+	margin: 0 auto;
+	z-index: 9999;
+	width: 1140px;
+	transform: translateY(-85px);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	padding-top: 100px;
+}
+
+.introcard img {
+	width: 100%;
+}
+
+.introcard_spacer {
+	margin-top: 65px;
+}
+
+.research_flow {
+	width: 100%;
+	padding-left: 11%;
+	padding-right: 7%;
+}
+
+.research_flow_fcw {
+	width: 100%;
+	padding-left: 14%;
+	padding-right: 14%;
+}
+
+
+/*colored sections*/
+
+.grey_background {
+	background-color: #F9F9F9;
+	width: 100%;	
+}
+
+.blue_background {
+	background-color: #35B0E5;
+	width: 100%;
+}
+
+.blue_background1 {
+	background-color: #35B0E5;
+	width: 100%;
+}
+
+.db_background1 {
+	background-color: #292f3a;
+	width: 100%;
+}
+
+.lb_background {
+	background-color: #D0E6EF;
+	width: 100%;
+}
+
+.light-blue_background {
+	background-color: #77C8EB;
+	width: 100%;
+}
+
+.hmw {
+	color: white;
+	text-align: center;
+	padding-top: 4.5em;
+	padding-bottom: 4.5em;
+
+}
+
+.hmw_fcw {
+    color: white;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+/*cards*/
+
+.card_summary {
+	width: 652px;
+	background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.card_summary h5 {
+	text-align: center;
+	text-transform: none;
+	letter-spacing: .7px;
+}
+
+.card_quote {
+	background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+	padding: 50px 32px;
+	margin: 0 auto;
+	height: 100%;
+/*	margin-bottom: 30px;
+*/}
+
+.card_quote h5 {
+	text-align: left;
+	text-transform: none;
+	letter-spacing: .7px;
+}
+
+
+.card_familiarity {
+	height: 100%;
+}
+
+.card_bottom {
+	width: 652px;
+	background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card_bottom h5 {
+	text-align: left;
+	text-transform: none;
+	letter-spacing: .7px;
+}
+
+.attribute {
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+.attribute img {
+	vertical-align: bottom;
+	width: 60px;
+	display: flex;
+    margin: auto;
+
+}
+
+.attribute h5 {
+	text-align: center;
+	letter-spacing: .7px;
+}
+
+.attribute p {
+	text-align: left;
+}
+
+
+
+.visibility {
+	padding-top: 20px;
+}
+
+.others {
+	padding-top: 42px;
+}
+
+.flexbox {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.flexbox1 {
+	display: block;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+/*	width: 100%;
+*//*	margin-left:-15px;
+*/	margin-right: -30px;
+}
+
+.flexbox1 img {
+	max-width: 33.0%;
+	height: auto;
+/*	padding-right: 15px;
+*/	padding-right: 30px;
+}
+
+.triangle {
+	width: 55%;
+}
+
+.vann {
+	width: 45%;
+}
+
+.imageframe {
+    border:1px solid #737373;
+}
+
+#icon_harassment {
+	width: 65px;
+	margin-top: 3px;
+}
+
+.icon_up {
+	margin-top: -2px;
+}
+
+#icon_repoprt {
+	width: 101px;
+/*	margin-top: -3px;
+*/}
+
+.icon_rating {
+	margin-top: 24px;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/*Back to top button*/
+/*codes for back to top button are from w3school.com
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
+
+
+

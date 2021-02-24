@@ -1,0 +1,136 @@
+/*spacer*/
+/*created based on the guide Maria provided in WNM 755*/
+.tp-spc-xs {
+	margin-top: 15px;
+}
+.tp-spc-sm {
+	margin-top: 30px;
+}
+.tp-spc-md {
+	margin-top: 50px;
+}
+.tp-spc-lg {
+	margin-top: 100px;
+}
+.tp-spc-xl {
+	margin-top: 150px;
+}
+.bt-spc-xs {
+	margin-bottom: 15px;
+}
+.bt-spc-sm {
+	margin-bottom: 30px;
+}
+.bt-spc-md {
+	margin-bottom: 50px;
+}
+.bt-spc-lg {
+	margin-bottom: 100px;
+}
+.bt-spc-xl {
+	margin-bottom: 150px;
+}
+
+.spc_xl {
+	height: 150px;
+}
+
+.spc_lg {
+	height: 100px;
+}
+
+.spc_lg_1 {
+	height: 100px;
+}
+
+.spc_md {
+	height: 50px;
+}
+
+.spc_sm {
+	height: 30px;
+}
+
+.spc_xs {
+	height: 15px;
+}
+
+
+@media (max-width:1200px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 450px) {
+
+	.tp-spc-md {
+	margin-top: 35px;
+	}
+
+	.bt-spc-xs {
+    margin-bottom: 10px;
+	}
+
+	.bt-spc-sm {
+	margin-bottom: 20px;
+	}
+
+	.bt-spc-md {
+	margin-bottom: 35px;
+	}
+
+	.bt-spc-lg {
+    margin-bottom: 70px;
+	}
+
+	.bt-spc-xl {
+    margin-bottom: 90px;
+	}
+
+	.tp-spc-xs {
+    margin-top: 10px;
+	}
+
+	.tp-spc-sm {
+	margin-top: 20px;
+	}
+
+	.tp-spc-md {
+	margin-top: 35px;
+	}
+
+	.tp-spc-lg {
+    margin-top: 70px;
+	}
+
+	.tp-spc-xl {
+    margin-top: 90px;
+	}
+
+	.spc_xl {
+	height: 90px;
+	}
+
+	.spc_lg {
+	height: 70px;
+	}
+
+	.spc_lg_1 {
+	height: 30px;
+	}
+
+	.spc_md {
+	height: 35px;
+	}
+
+	.spc_sm {
+	height: 15px;
+	}
+
+	.spc_xs {
+	height: 10px;
+	}
+}

@@ -1,0 +1,249 @@
+.picker .main-image img {
+  width:100%;
+  margin-bottom: 15px;
+}
+
+.picker .main-image2 img {
+  width:100%;
+  margin-right: 30px;
+}
+
+.picker1 .main-image1 img {
+  width:100%;
+  margin-bottom: 15px;
+  padding: 0 30px;
+}
+
+.picker .main-image3 img {
+    display: none;
+}
+
+.picker .thumbstrip2 img {
+    width: 166px;
+    border: solid;
+    border-width: 1px;  
+}
+
+.thumbstrip {
+	display: block;
+	flex-flow: row nowrap;
+	align-content: space-between;
+	max-width: 100%;
+/*	height: 128px;
+*/	padding: auto;
+}
+
+.thumbstrip1 {
+	display: block;
+	flex-flow: row nowrap;
+	align-content: space-between;
+	max-width: 100%;
+	padding: auto;
+}	
+
+.thumbstrip2 {
+	flex: none;
+	padding: auto;
+	margin-bottom:10px
+	margin-left: 30px;
+}
+
+.thumbstrip3 {
+	display: none;
+}
+
+.thumb_spacer {
+	margin-right: 2.5%;
+}
+
+.thumbstrip img {
+	width:17.6%;
+	cursor: pointer;
+}
+
+.thumbstrip1 img {
+	width:14.16%;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.5);
+	max-height: 107px;
+
+	}
+
+.thumbstrip2 img {
+	cursor: pointer;
+}
+
+.thumbstrip3 img {
+	width:25%;
+	cursor: pointer;
+}
+
+.imageframe1 {
+	border-color: black;
+	border-width: 1px;
+}
+
+.cooler {
+	display:flex;
+}
+
+.cooler .thumbstrip2 {
+    /* flex: none; */
+    width: 166px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+#shooter {
+	justify-content: flex-start;
+}
+
+#shooter img{
+	margin-bottom: 20px;
+}
+/* Remove the space beneath inline-block elements that is caused by being vertically aligned to the baseline */
+/*.cooler .thumbstrip2 img {
+vertical-align:middle;
+}*/
+
+@media (max-width: 1200px) {
+
+	.thumbstrip {
+	margin-right: 0;
+	margin-left:0;
+	}
+
+	.thumb_spacer {
+    margin-right: 2.3%;
+	}
+
+	.cooler .thumbstrip2 {
+	width: 150px;
+    margin-left: 25px;
+    flex-direction: column;
+    justify-content: flex-start;
+	}
+
+	.picker .thumbstrip2 img {
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    margin-right:0;
+	}
+
+	
+}	
+
+@media (max-width: 1100px) {
+	.cooler .thumbstrip2 {
+    width: 125px;
+    margin-left: 20px;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.cooler .thumbstrip2 {
+	display: none;
+	}
+
+	.picker .thumbstrip2 img {
+    display: none;
+	}
+
+	.picker .main-image2 img {
+    display: none;
+	}
+
+	.thumbstrip3 {
+	display: block;
+	flex-flow: row nowrap;
+	align-content: flex-start;
+	max-width: 100%;
+	padding: auto;
+	margin-top: 22px;
+	}
+
+	.thumbstrip3 img {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 15px;
+	}
+
+	.picker .main-image3 img {
+    display: block;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+
+	.thumb_spacer {
+    margin-right: 2.2%;
+	}
+
+	.thumbstrip3 {
+	margin-top: 20px;
+	}
+
+	.thumbstrip3 img {
+    width: 110px;
+    margin-right: 10px;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.thumbstrip3 img {
+    width: 90px;
+    margin-right: 6px;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+/*	.thumbstrip {
+	max-height: 39px;
+	}
+
+	.thumbstrip1 {
+	max-height: 46px;
+	}*/
+
+	.picker1 .main-image1 img {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 0 0px;
+	}
+
+	.thumbstrip3 img {
+    width: 70px;
+    margin-right: 5px;
+	}
+
+	.thumbstrip img {
+	width:17%;
+	cursor: pointer;
+	}
+
+}
+
+@media (max-width: 320px) {
+	.thumbstrip3 img {
+    width: 63px;
+    margin-right: 5px;
+	}
+
+	.thumbstrip3 {
+    margin-top: 10px;
+	}
+
+}
+/* You don't have to change the code to change the design. The jQuery keeps working regardles of how you layout the elements. */

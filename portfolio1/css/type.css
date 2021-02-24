@@ -1,0 +1,405 @@
+@font-face {
+	font-family: "itc-avant-garde-gothic-pro-demi";
+  	src: url("../font/itc_demi.woff2") format("woff2");
+    src: url("../font/itc_demi.woff") format("woff");
+}
+
+
+
+body {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+}
+
+
+.bold {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+.demi {
+	font-family: "itc-avant-garde-gothic-pro-demi";
+	letter-spacing: 1px;
+}
+
+.medium {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: .75px;
+}
+
+.book {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0.5px;
+}
+
+/*.book_oblique {
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}*/
+
+h1 {
+	font-size: 60px;	
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 1.5px;
+	margin:0;
+
+}
+
+
+#h1_sub {
+	font-size: 30px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 500;
+	color: #35B0E5;
+	text-align: center;
+	letter-spacing: .5px;
+}
+
+h2 {
+	font-size: 35px;
+	font-family: "itc-avant-garde-gothic-pro-demi";
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	margin: 0;
+}
+
+h3 {
+	font-size: 22px;
+	font-family: "itc-avant-garde-gothic-pro-demi";
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: "itc-avant-garde-gothic-pro-demi";
+	margin: 0;
+}
+
+h5 {
+	font-size: 16px;
+	font-family: "itc-avant-garde-gothic-pro-demi";
+	text-transform: uppercase;
+	color: #EE368A;
+	margin: 0;
+	letter-spacing: .	;
+}
+
+/*h6{
+    font-family: "itc-avant-garde-gothic-pro-demi";
+  	font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.4;
+}*/
+
+
+.side {
+    font-family: "itc-avant-garde-gothic-pro-demi";
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.quote {
+	font-size: 25px;
+	font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+	font-weight: 300;
+	color: #3E4347;
+	line-height: 1.2;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.quote_grey {
+	font-size: 25px;
+	font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+	font-weight: 300;
+	color: #3E4347;
+	line-height: 1.2;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.quote_grey strong {
+	color: #EE368A;
+}
+
+
+
+p {
+	font-size: 16px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #3E4347;
+	margin: 0;
+	letter-spacing: .3px;
+}
+
+ol {
+	font-size: 16px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #3E4347;
+	margin: 0;
+	letter-spacing: .3px;
+}
+
+.caption_title {
+	font-size: 15px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 700;
+	line-height: 1.5;
+	color: black;
+	margin: 0;
+	letter-spacing: .3px;
+}
+
+.caption {
+	font-size: 12px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+	color: #3E4347;
+	margin: 0;
+	letter-spacing: .3px;
+}
+
+.tabfolder {
+	font-size: 14px;
+	font-family: "itc-avant-garde-gothic-pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+	color: #3E4347;
+	margin: 0;
+	letter-spacing: .3px;
+}
+
+.s21 {
+}
+
+.center {
+	text-align: center;
+}
+
+.link {
+	color: #35B0E5;
+}
+
+.white {
+	color: white;
+}
+
+.blue {
+	color: #35B0E5;
+}
+
+.link {
+	color: #0068d6;
+}
+
+.pink {
+	color: #EE368A;
+}
+
+.black {
+	color: black;
+}
+
+.tagline1 {
+    font-size: 20px;
+    text-align: left;
+    
+    line-height: 1.1;
+    padding-top: 8em;
+    /* padding-bottom: 7em; */
+    padding-left: 9%;
+    display: block;
+    flex-wrap: nowrap;
+    
+    color: #77C8EB;
+    vertical-align: left;
+    display: block;
+    position: relative;
+}
+
+.tagline {
+    font-size: 40px;
+    text-align: left;
+    /* text-transform: uppercase; */
+    line-height: 1.1;
+    padding-left: 9%;
+    padding-top: 4.5em;
+    padding-bottom: .3em;
+    flex-wrap: nowrap;
+    color: #77C8EB;
+    vertical-align: left;
+    display: block;
+}
+
+.tagline2 {
+	font-size: 18px;
+    text-align: left;
+    line-height: 1.1;
+    padding-top: .3em;
+    /* padding-bottom: 7em; */
+    padding-left: 9%;
+    display: block;
+    flex-wrap: nowrap;
+    color: #879198;
+    vertical-align: left;
+    display: block;
+    position: relative;
+}
+
+.absolute {
+	position: absolute;
+/*	left: 16em;*/
+	left: 16vw;
+    top: 7em;
+    width: 1100px;
+}
+
+. {
+	position: relative;
+/*	left: 16em;*/
+	left: 16vw;
+    top: 7em;
+    width: 1100px;
+}
+
+.tagline_space {
+	height: 36em;
+}
+
+.tagline_space1 {
+	height: 13em;
+}
+
+.about {
+	line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+	#h1_sub {
+    font-size: 35px;
+	}
+
+	.tagline: {
+	display: none;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.s21{
+	font-size: 21px;
+	}
+
+	.caption {
+	font-size: 8px;
+	display: block;
+	line-height: 1.2;
+	}
+
+	
+
+	/*PERSONA*/
+	
+	.persona_title {
+	font-size:28px;
+	color: #35B0E5;	
+	}
+}
+
+@media (max-width: 450px) {
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+	font-size: 28px;
+	letter-spacing: .8px;
+	}
+
+	h3 {
+	font-size: 18px;
+	}
+
+	p {
+	font-size: 15px;
+	color: #3E4347;
+	}
+
+	.s21{
+	font-size: 21px;
+	}
+
+	.quote {
+		font-size: 20px;
+	}
+
+	.quote_grey {
+		font-size: 20px;
+	}
+
+	.tabfolder {
+	font-size: 12px;
+	display: block;
+	}
+
+	#h1_sub {
+    align-content: center;
+    font-size: 28px;
+    letter-spacing: .3px;
+	}
+
+	.caption {
+	font-size: 7px;
+	display: block;
+	line-height: 1;
+	}
+/*PERSONA*/
+	
+	.persona_title {
+	font-size:23px;
+	color: #35B0E5;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,400 @@
+/*these codes are modified from codepen.com. https://codepen.io/mutedblues/pen/MmPNPG
+*/
+
+body {
+  margin: 0;
+  width:100%;
+}
+
+a {
+  color: #c7c7c7;
+
+}
+
+.selected {
+  color: #000;
+}
+
+/* header */
+.header_background {
+  background-color: white;
+  width: 100vw;
+  height: 61px;
+  margin-top: 50px;
+/*  margin-bottom:150px;
+*/}
+
+.header .menu {
+    flex-direction: row;
+    justify-content: left;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+.header {
+  background-color: transparent;
+  padding-top: 0;
+  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header ul {
+  list-style: none;
+  padding-left: 0;
+/*  background-color: transparent;
+*/}
+
+.header li a {
+  display: block;
+  padding-top: 12px;
+  font-size: 1.1em;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+.active>a {
+    color: #161718;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #EE368A;
+}
+
+.logo {
+  position: absolute;
+  width: 68px;
+}
+
+
+.logo_container {
+  position: relative;
+  align-self: flex-start;
+  width: 40vw;
+  max-height: 60px;
+}
+
+.name {
+  font-family: "itc-avant-garde-gothic-pro-demi";
+  margin-bottom:0;
+  vertical-align: center;
+  margin-top: 0px;
+  font-size: 21px;
+}
+
+.title {
+  font-weight: 400;
+  margin-top: 0;
+  text-align: left;
+  vertical-align: center;
+  font-size: 16px;
+}
+
+.me {
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 7px;
+  margin-left: 85px;
+  height: 50px;
+  display: block;
+}
+
+.me p {
+  margin-bottom: -10px;
+}
+
+/* menu */
+
+/*.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: nowrap
+}*/
+
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  user-select: none;
+  position: absolute;
+  margin-left: 92vw;
+  margin-top: 12px;
+  display: none;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  transition: background .2s ease-out;
+  width: 19px;
+  
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .01s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+
+
+.menu-btn:checked ~ .header  li {
+  color: white;
+}
+
+.header .menu-btn:checked ~ .logo {
+  position:fixed;
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+  z-index: 5;
+  position: fixed;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  background: white;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  background: white;
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .header:before {
+  background-color: #fff;
+}
+
+.header .menu-btn:checked ~ .header: after{
+  background-color: #35B0E5;
+}
+
+
+@media (max-width: 1200px) {
+  .header_background {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .logo_container {
+    margin-left: 1.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header_background {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .header .menu {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .header {
+  max-width: 100%;
+  } 
+
+  .header_background {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+/*  .header .menu {
+    margin-right: 0px;
+  }*/
+
+  .header li a {
+    display: block;
+    padding-right: 0;
+/*    font-size: 25px;
+    padding-top: 30px;*/
+  }
+
+  .logo_container {
+    margin-left: 2.5vw;
+  }
+
+  .header .menu {
+    margin-right: 31px;
+  } 
+
+  .logo_container {
+    width: 60vw;
+  }      
+
+  .header li a {
+  padding-top: 10px;
+  display: block;
+  padding-right: 0;
+  font-size: 16px;
+  }
+
+  .me {
+    padding-top: 0;
+  }
+
+  .logo {
+    position: absolute;
+    width: 50px;
+  }
+
+  .name {
+    vertical-align: center;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 21px;
+  }
+
+  .name {
+    font-size: 19px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+/*  .header_background {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+}*/
+
+/* 48em = 768px */
+} 
+
+
+@media (max-width: 600px) {
+  .header li {
+    display: none;
+  }
+  .header li a {
+  cursor: pointer;
+  padding-top: 15px;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 25px;
+ }
+
+  .header .menu {
+    clear: block;
+    flex-wrap: wrap;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    background-color: #35B0E5;
+    transform: translateY(-100%);
+    transition: all 0.3s;
+    text-align: center;
+  }
+
+  .logo {
+  position: absolute;
+  width: 30px;
+  z-index: 2;
+  }
+
+  .header_background {
+    margin-top: 10px;
+    height: 47px;
+  }
+
+  .header .menu-icon {
+    display: block;
+  }
+
+  .header .menu-icon {
+  margin-top: 17px;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    transform: translateY(0);
+  }
+
+   .header .menu-btn:checked ~ .menu li {
+    display: block;
+  }  
+
+  .header .menu-btn:checked ~ .menu li a{
+    color: white;
+  }  
+
+    .header .menu-btn:checked ~ .logo {
+    position: fixed;
+  } 
+
+  .logo {
+    width: 39px;
+  }
+
+  .me {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  .logo {
+    width: 36px;
+  }
+
+
+}
